@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -38,7 +39,6 @@ h1 {
     font-size: 48px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    text-shadow: 0.1em 0.1em rgb(255, 255, 255);
 
 }
 
@@ -65,12 +65,12 @@ table {
     display: flex;
     justify-content: space-around;
     padding: 15px;
-    background-color: #b9b9b957;
+    background-color: #ffffff00;
     border-radius: 10px;
 }
 
 .card {
-    background-color: #ffffff97;
+    background-color: #ffffff99;
     border-radius: 12px;
     margin: 10px;
     padding: 20px;
@@ -99,6 +99,11 @@ table {
     border-radius: 5px;
 }
 
+.preço button:hover{
+    background-color: #ffffffcc;
+}
+
+
 footer {
     text-align: center;
     padding: 30px;
@@ -112,15 +117,25 @@ footer i {
 }
 
 
-@keyframes nome {
+@keyframes bolinhas {
     0% {
-        transform: scale(1);
+        transform: scale(1.);
+        
     }
 
-    100% {
-        transform: scale(1.3);
-        border-radius: 5px;
+    50%{
+        transform: scale(1.5);
+       
+
     }
+    
+      
+    100% {
+        transform: scale(1);
+        
+    }
+
+   
 }
 
 .animação {
@@ -129,6 +144,7 @@ footer i {
     align-items: center;
     padding: 100px;
     flex-wrap: wrap;
+    flex-grow: initial;
 }
 
 .animação div {
@@ -140,18 +156,19 @@ footer i {
     margin: 10px;
     width: 100px;
     height: 100px;
-    color: #000;
-    border-radius: 50px;
+    color: #000000;
+    border-radius: 600px;
+    
 }
 
 .animação div:hover{
-    animation: nome 1.5s forwards ;
+    animation: bolinhas 1.5s ;
     border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 
 .quadrado-preto { background-color: rgb(73, 73, 73); }
-.quadrado-branco { background-color: white;  }
+.quadrado-branco { background-color: ghostwhite;  }
 .quadrado-rosa { background-color: rgb(255, 88, 227); }
 .quadrado-verde { background-color: rgb(129, 210, 129); }
 .quadrado-azul { background-color: rgb(22, 22, 229); }
@@ -167,9 +184,9 @@ footer i {
 
 @media (max-width: 768px) {
     .animação div {
-        width: 80px;
-        height: 80px;
-        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
     }
 
     .card {
